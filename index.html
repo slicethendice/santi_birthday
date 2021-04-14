@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <style>
+    .message {
+      visibility: hidden;
+    }
+
+    @media print {
+      h1 {
+        visibility: hidden;
+      }
+      .message {
+        visibility: visible;
+        width: 700px;
+      }
+      .message img {
+        max-width: 100%;
+      }
+    }
+  
+  </style>
+
+
+</head>
+
+<body>
+
+<h1><input type="button" value="Print Me" onClick="window.print()"></h1>
+  <div class="message">
+    <img src="yoda_ascii.png" />
+    <h3>In the place padawans rest their heads the next clue you will find.</h3>
+  </div>
+</body>
+</html>
